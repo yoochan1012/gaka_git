@@ -1,0 +1,10 @@
+<p>qrgen works!</p>
+<br />
+<div class="mb-3">
+    <label for="exampleFormControlInput2" class="form-label">명함정보 QR
+
+    </label>
+    <textarea class="form-control" id="exampleFormControlInput2" rows="4" disabled>{{ card }}</textarea>
+</div>
+<p>이곳에 QR코드가 생성됩니다.</p>
+<ngx-qrcode [elementType]="elementType" [value]="value" [width]="500"></ngx-qrcode>

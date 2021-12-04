@@ -1,0 +1,26 @@
+<form (ngSubmit)="onLoginSubmit()">
+    <div class="form-group">
+        <label for="exampleInputEmail3"> Username?</label>
+        <input
+            type="text"
+            [(ngModel)]="username"
+            [ngModelOptions]="{standalone: true}"
+            class="form-control"
+            id="exampleInputEmail3"
+        />
+    </div>
+    <br />
+    <div class="form-group">
+        <label for="exampleInputEmail4"> Password?</label>
+        <input
+            type="password"
+            [(ngModel)]="password"
+            [ngModelOptions]="{standalone: true}"
+            class="form-control"
+            id="exampleInputEmail4"
+        />
+        </div>
+<input type="submit" class="btn btn-primary" value="Submit" />
+</form>
+
+<a routerLink = "/register">회원이 아니신가요?</a>
